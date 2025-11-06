@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body;
+  }
+}
+
+@layer components {
+  .glow-border {
+    @apply relative;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.8);
+  }
+  
+  .ml-gradient {
+    @apply bg-gradient-to-r from-ml-blue via-ml-cyan to-ml-glow;
+  }
+}
