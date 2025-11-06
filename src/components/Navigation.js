@@ -1,6 +1,8 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+
+
 
 const Navigation = ({ theme, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false);
